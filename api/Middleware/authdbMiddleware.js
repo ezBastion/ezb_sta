@@ -35,7 +35,6 @@ module.exports = function (req, res, next, config) {
                     req.aud = 'internal';
                     req.connection.user = b.name;
                     req.sign_key = crypto.createHash('md5').update(bcrypt.genSaltSync(32)).digest('hex');
-                    console.log("db auth ok, next");
                     next()
                 } else {
                     console.log(req.body.username + " found in db but bad password, next");
