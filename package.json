@@ -1,0 +1,25 @@
+{
+  "name": "ezapi_sta",
+  "version": "1.0.0",
+  "description": "svsapi_sta in node",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "memory-cache": "^0.2.0",
+    "node-sspi": "^0.2.2",
+    "node-windows": "^0.1.14",
+    "nodemon": "^1.12.1",
+    "request": "^2.85.0",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "renaud devers",
+  "license": "ISC"
+}
