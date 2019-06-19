@@ -2,7 +2,7 @@ var Service = require('node-windows').Service;
 const path = require('path');
 // Create a new service object
 var svc = new Service({
- name:'ezapi_sta',
+ name:'ezBastion sta ('+ config.issuer +')',
  description: 'EZAPI STA - secure ticket authority',
  script: path.join(__dirname, 'server.js')
 });
